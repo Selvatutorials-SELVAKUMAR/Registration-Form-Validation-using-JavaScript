@@ -1,0 +1,123 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body{
+    background: linear-gradient(to right , #2a0845,#6441a5);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    background-color: rgb(216,214,214);
+    box-shadow: rgb(0,0,0) 0px 5px 15px;
+    width: 400px;
+}
+
+.header{
+    color: #fff;
+    text-align: center;
+    background-color: #2a0845;
+    padding: 20px 40px;
+    border-bottom: 2px solid #494848;
+}
+
+.form{
+    padding: 30px 40px;
+}
+
+.form-group{
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.form-group label{
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input{
+    border: 2px solid #f0f0f0;
+    display: block;
+    border-radius: 4px;
+    font-size: .8rem;
+    width: 100%;
+    padding: 10px;
+}
+
+.form input::placeholder{
+    color: #2a0845;
+}
+
+.form-group i{
+    position: absolute;
+    right: 10px;
+    top: 35px;
+    visibility: hidden;
+}
+
+.form-group span{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-weight: bolder;
+    font-size: 1rem;
+    font-style: italic;
+    visibility: hidden;
+}
+
+
+.form-group.success input{
+    border-color: #2ecc71;
+}
+
+.form-group.error input{
+    border-color: #e74c3c;
+}
+
+.form-group.error span{
+    color: #e74c3c;
+    visibility: visible;
+}
+
+.form-group.success i.ion-ios-checkmark{
+    visibility: visible;
+    color: #2ecc71;
+}
+
+.form-group.error i.ion-android-alert{
+    visibility: visible;
+    color: #e74c3c;
+}
+
+.form #submit{
+    background-color: #2a0845;
+    border: none;
+    outline: none;
+    color: #fff;
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+.form #submit:hover{
+    background-color: #6441a5;
+}
+
+@media only screen and (max-width : 500px){
+    .form{
+        width: 100%;
+    }
+    .form-group span{
+        font-size: xx-small;
+    }
+}
