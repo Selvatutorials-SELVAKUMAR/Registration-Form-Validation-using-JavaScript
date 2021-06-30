@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <title>Form Validation using JavaScript</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>Registration Form</h2>
+        </div>
+        <form action="" class="form">
+            <div class="form-group">
+                <label for="">UserName : </label>
+                <input type="text" placeholder="username" id = "username" autocomplete="off">
+                <i class="ion-ios-checkmark"></i>
+                <i class="ion-android-alert"></i>
+                <span></span>
+            </div>
+            <div class="form-group">
+                <label for="">Email : </label>
+                <input type="text" placeholder="email" id = "email" autocomplete="off">
+                <i class="ion-ios-checkmark"></i>
+                <i class="ion-android-alert"></i>
+                <span></span>
+            </div>
+            <div class="form-group">
+                <label for="">Phone Number : </label>
+                <input type="text" placeholder="phonenumber" id = "phonenumber" autocomplete="off">
+                <i class="ion-ios-checkmark"></i>
+                <i class="ion-android-alert"></i>
+                <span></span>
+            </div>
+            <div class="form-group">
+                <label for="">Password : </label>
+                <input type="password" placeholder="password" id = "password" autocomplete="off">
+                <i class="ion-ios-checkmark"></i>
+                <i class="ion-android-alert"></i>
+                <span></span>
+            </div>
+            <div class="form-group">
+                <label for="">Confirm Password : </label>
+                <input type="password" placeholder="confirm password" id = "confirmpassword" autocomplete="off">
+                <i class="ion-ios-checkmark"></i>
+                <i class="ion-android-alert"></i>
+                <span></span>
+            </div>
+            <button id = 'submit'>Submit</button>
+        </form>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
